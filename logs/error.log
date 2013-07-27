@@ -1,0 +1,360 @@
+[Mon Jul 22 04:20:50 2013] [error] [client 177.19.98.11] File does not exist: /etc/apache2/htdocs
+[Mon Jul 22 04:38:34 2013] [error] ERROR:gestao:Exception on / [GET]
+[Mon Jul 22 04:38:34 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 04:38:34 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 04:38:34 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 04:38:34 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 04:38:34 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 04:38:34 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 04:38:34 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 04:38:34 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1473, in full_dispatch_request
+[Mon Jul 22 04:38:34 2013] [error]     rv = self.preprocess_request()
+[Mon Jul 22 04:38:34 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1666, in preprocess_request
+[Mon Jul 22 04:38:34 2013] [error]     rv = func()
+[Mon Jul 22 04:38:34 2013] [error]   File "/home/diego/gestao/gestao.py", line 29, in before_request
+[Mon Jul 22 04:38:34 2013] [error]     g.db = connect_db()
+[Mon Jul 22 04:38:34 2013] [error]   File "/home/diego/gestao/gestao.py", line 19, in connect_db
+[Mon Jul 22 04:38:34 2013] [error]     return sqlite3.connect(app.config['DATABASE'])
+[Mon Jul 22 04:38:34 2013] [error] OperationalError: unable to open database file
+[Mon Jul 22 04:48:33 2013] [error] ERROR:gestao:Exception on / [GET]
+[Mon Jul 22 04:48:33 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 04:48:33 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 04:48:33 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 04:48:33 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 04:48:33 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 04:48:33 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 04:48:33 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 04:48:33 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1473, in full_dispatch_request
+[Mon Jul 22 04:48:33 2013] [error]     rv = self.preprocess_request()
+[Mon Jul 22 04:48:33 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1666, in preprocess_request
+[Mon Jul 22 04:48:33 2013] [error]     rv = func()
+[Mon Jul 22 04:48:33 2013] [error]   File "/home/diego/gestao/gestao.py", line 29, in before_request
+[Mon Jul 22 04:48:33 2013] [error]     g.db = connect_db()
+[Mon Jul 22 04:48:33 2013] [error]   File "/home/diego/gestao/gestao.py", line 19, in connect_db
+[Mon Jul 22 04:48:33 2013] [error]     return sqlite3.connect(app.config['DATABASE'])
+[Mon Jul 22 04:48:33 2013] [error] OperationalError: unable to open database file
+[Mon Jul 22 04:53:38 2013] [error] ERROR:gestao:Exception on / [GET]
+[Mon Jul 22 04:53:38 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 04:53:38 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 04:53:38 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 04:53:38 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 04:53:38 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 04:53:38 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 04:53:38 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 04:53:38 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1473, in full_dispatch_request
+[Mon Jul 22 04:53:38 2013] [error]     rv = self.preprocess_request()
+[Mon Jul 22 04:53:38 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1666, in preprocess_request
+[Mon Jul 22 04:53:38 2013] [error]     rv = func()
+[Mon Jul 22 04:53:38 2013] [error]   File "/home/diego/gestao/gestao.py", line 29, in before_request
+[Mon Jul 22 04:53:38 2013] [error]     g.db = connect_db()
+[Mon Jul 22 04:53:38 2013] [error]   File "/home/diego/gestao/gestao.py", line 19, in connect_db
+[Mon Jul 22 04:53:38 2013] [error]     return sqlite3.connect('db/gestao.db')
+[Mon Jul 22 04:53:38 2013] [error] OperationalError: unable to open database file
+[Mon Jul 22 04:59:51 2013] [error] ERROR:gestao:Exception on / [GET]
+[Mon Jul 22 04:59:51 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 04:59:51 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 04:59:51 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 04:59:51 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 04:59:51 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 04:59:51 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 04:59:51 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 04:59:51 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1473, in full_dispatch_request
+[Mon Jul 22 04:59:51 2013] [error]     rv = self.preprocess_request()
+[Mon Jul 22 04:59:51 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1666, in preprocess_request
+[Mon Jul 22 04:59:51 2013] [error]     rv = func()
+[Mon Jul 22 04:59:51 2013] [error]   File "/home/diego/gestao/gestao.py", line 29, in before_request
+[Mon Jul 22 04:59:51 2013] [error]     g.db = connect_db()
+[Mon Jul 22 04:59:51 2013] [error]   File "/home/diego/gestao/gestao.py", line 19, in connect_db
+[Mon Jul 22 04:59:51 2013] [error]     return sqlite3.connect('db/gestao.db')
+[Mon Jul 22 04:59:51 2013] [error] OperationalError: unable to open database file
+[Mon Jul 22 04:59:54 2013] [error] ERROR:gestao:Exception on / [GET]
+[Mon Jul 22 04:59:54 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 04:59:54 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 04:59:54 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 04:59:54 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 04:59:54 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 04:59:54 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 04:59:54 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 04:59:54 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1473, in full_dispatch_request
+[Mon Jul 22 04:59:54 2013] [error]     rv = self.preprocess_request()
+[Mon Jul 22 04:59:54 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1666, in preprocess_request
+[Mon Jul 22 04:59:54 2013] [error]     rv = func()
+[Mon Jul 22 04:59:54 2013] [error]   File "/home/diego/gestao/gestao.py", line 29, in before_request
+[Mon Jul 22 04:59:54 2013] [error]     g.db = connect_db()
+[Mon Jul 22 04:59:54 2013] [error]   File "/home/diego/gestao/gestao.py", line 19, in connect_db
+[Mon Jul 22 04:59:54 2013] [error]     return sqlite3.connect('db/gestao.db')
+[Mon Jul 22 04:59:54 2013] [error] OperationalError: unable to open database file
+[Mon Jul 22 05:00:07 2013] [error] ERROR:gestao:Exception on / [GET]
+[Mon Jul 22 05:00:07 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 05:00:07 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 05:00:07 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 05:00:07 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 05:00:07 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 05:00:07 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 05:00:07 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 05:00:07 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1473, in full_dispatch_request
+[Mon Jul 22 05:00:07 2013] [error]     rv = self.preprocess_request()
+[Mon Jul 22 05:00:07 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1666, in preprocess_request
+[Mon Jul 22 05:00:07 2013] [error]     rv = func()
+[Mon Jul 22 05:00:07 2013] [error]   File "/home/diego/gestao/gestao.py", line 29, in before_request
+[Mon Jul 22 05:00:07 2013] [error]     g.db = connect_db()
+[Mon Jul 22 05:00:07 2013] [error]   File "/home/diego/gestao/gestao.py", line 19, in connect_db
+[Mon Jul 22 05:00:07 2013] [error]     return sqlite3.connect('db/gestao.db')
+[Mon Jul 22 05:00:07 2013] [error] OperationalError: unable to open database file
+[Mon Jul 22 05:03:41 2013] [error] ERROR:gestao:Exception on / [GET]
+[Mon Jul 22 05:03:41 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 05:03:41 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 05:03:41 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 05:03:41 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 05:03:41 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 05:03:41 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 05:03:41 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 05:03:41 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1473, in full_dispatch_request
+[Mon Jul 22 05:03:41 2013] [error]     rv = self.preprocess_request()
+[Mon Jul 22 05:03:41 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1666, in preprocess_request
+[Mon Jul 22 05:03:41 2013] [error]     rv = func()
+[Mon Jul 22 05:03:41 2013] [error]   File "/home/diego/gestao/gestao.py", line 29, in before_request
+[Mon Jul 22 05:03:41 2013] [error]     g.db = connect_db()
+[Mon Jul 22 05:03:41 2013] [error]   File "/home/diego/gestao/gestao.py", line 19, in connect_db
+[Mon Jul 22 05:03:41 2013] [error]     return sqlite3.connect('db/gestao.db')
+[Mon Jul 22 05:03:41 2013] [error] OperationalError: unable to open database file
+[Mon Jul 22 05:06:15 2013] [error] ERROR:gestao:Exception on / [GET]
+[Mon Jul 22 05:06:15 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 05:06:15 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 05:06:15 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 05:06:15 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 05:06:15 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 05:06:15 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 05:06:15 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 05:06:15 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1473, in full_dispatch_request
+[Mon Jul 22 05:06:15 2013] [error]     rv = self.preprocess_request()
+[Mon Jul 22 05:06:15 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1666, in preprocess_request
+[Mon Jul 22 05:06:15 2013] [error]     rv = func()
+[Mon Jul 22 05:06:15 2013] [error]   File "/home/diego/gestao/gestao.py", line 29, in before_request
+[Mon Jul 22 05:06:15 2013] [error]     g.db = connect_db()
+[Mon Jul 22 05:06:15 2013] [error]   File "/home/diego/gestao/gestao.py", line 19, in connect_db
+[Mon Jul 22 05:06:15 2013] [error]     return sqlite3.connect('db/gestao.db')
+[Mon Jul 22 05:06:15 2013] [error] OperationalError: unable to open database file
+[Mon Jul 22 05:13:35 2013] [error] ERROR:gestao:Exception on /autenticar [GET]
+[Mon Jul 22 05:13:35 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 05:13:35 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 05:13:35 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 05:13:35 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 05:13:35 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 05:13:35 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 05:13:35 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 05:13:35 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+[Mon Jul 22 05:13:35 2013] [error]     rv = self.dispatch_request()
+[Mon Jul 22 05:13:35 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1461, in dispatch_request
+[Mon Jul 22 05:13:35 2013] [error]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Jul 22 05:13:35 2013] [error] TypeError: autenticar() takes exactly 2 arguments (0 given)
+[Mon Jul 22 05:22:45 2013] [error] diego
+[Mon Jul 22 05:23:39 2013] [error] ERROR:gestao:Exception on /autenticar [GET]
+[Mon Jul 22 05:23:39 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 05:23:39 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 05:23:39 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 05:23:39 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 05:23:39 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 05:23:39 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 05:23:39 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 05:23:39 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+[Mon Jul 22 05:23:39 2013] [error]     rv = self.dispatch_request()
+[Mon Jul 22 05:23:39 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1461, in dispatch_request
+[Mon Jul 22 05:23:39 2013] [error]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Jul 22 05:23:39 2013] [error]   File "/home/diego/gestao/gestao.py", line 56, in autenticar
+[Mon Jul 22 05:23:39 2013] [error]     [request.args['usuario'], request.args['senha']])
+[Mon Jul 22 05:23:39 2013] [error] OperationalError: near ")": syntax error
+[Mon Jul 22 05:24:26 2013] [error] ERROR:gestao:Exception on /autenticar [GET]
+[Mon Jul 22 05:24:26 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 05:24:26 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 05:24:26 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 05:24:26 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 05:24:26 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 05:24:26 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 05:24:26 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 05:24:26 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+[Mon Jul 22 05:24:26 2013] [error]     rv = self.dispatch_request()
+[Mon Jul 22 05:24:26 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1461, in dispatch_request
+[Mon Jul 22 05:24:26 2013] [error]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Jul 22 05:24:26 2013] [error]   File "/home/diego/gestao/gestao.py", line 56, in autenticar
+[Mon Jul 22 05:24:26 2013] [error]     [request.args['usuario'], request.args['senha']])
+[Mon Jul 22 05:24:26 2013] [error] OperationalError: no such column: usuario
+[Mon Jul 22 05:25:38 2013] [error] ERROR:gestao:Exception on /autenticar [GET]
+[Mon Jul 22 05:25:38 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 05:25:38 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 05:25:38 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 05:25:38 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 05:25:38 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 05:25:38 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 05:25:38 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 05:25:38 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+[Mon Jul 22 05:25:38 2013] [error]     rv = self.dispatch_request()
+[Mon Jul 22 05:25:38 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1461, in dispatch_request
+[Mon Jul 22 05:25:38 2013] [error]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Jul 22 05:25:38 2013] [error]   File "/home/diego/gestao/gestao.py", line 56, in autenticar
+[Mon Jul 22 05:25:38 2013] [error]     [request.args['usuario'], request.args['senha']])
+[Mon Jul 22 05:25:38 2013] [error] OperationalError: no such column: usuario
+[Mon Jul 22 05:26:37 2013] [error] ERROR:gestao:Exception on /autenticar [GET]
+[Mon Jul 22 05:26:37 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 05:26:37 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 05:26:37 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 05:26:37 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 05:26:37 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 05:26:37 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 05:26:37 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 05:26:37 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+[Mon Jul 22 05:26:37 2013] [error]     rv = self.dispatch_request()
+[Mon Jul 22 05:26:37 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1461, in dispatch_request
+[Mon Jul 22 05:26:37 2013] [error]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Jul 22 05:26:37 2013] [error]   File "/home/diego/gestao/gestao.py", line 56, in autenticar
+[Mon Jul 22 05:26:37 2013] [error]     [request.args['usuario'], request.args['senha']])
+[Mon Jul 22 05:26:37 2013] [error] OperationalError: no such column: usuario
+[Mon Jul 22 05:27:28 2013] [error] ERROR:gestao:Exception on /autenticar [GET]
+[Mon Jul 22 05:27:28 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 05:27:28 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 05:27:28 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 05:27:28 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 05:27:28 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 05:27:28 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 05:27:28 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 05:27:28 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+[Mon Jul 22 05:27:28 2013] [error]     rv = self.dispatch_request()
+[Mon Jul 22 05:27:28 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1461, in dispatch_request
+[Mon Jul 22 05:27:28 2013] [error]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Jul 22 05:27:28 2013] [error]   File "/home/diego/gestao/gestao.py", line 56, in autenticar
+[Mon Jul 22 05:27:28 2013] [error]     [request.args['senha']])
+[Mon Jul 22 05:27:28 2013] [error] OperationalError: no such column: usuario
+[Mon Jul 22 05:28:15 2013] [error] ERROR:gestao:Exception on /autenticar [GET]
+[Mon Jul 22 05:28:15 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 05:28:15 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 05:28:15 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 05:28:15 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 05:28:15 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 05:28:15 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 05:28:15 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 05:28:15 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+[Mon Jul 22 05:28:15 2013] [error]     rv = self.dispatch_request()
+[Mon Jul 22 05:28:15 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1461, in dispatch_request
+[Mon Jul 22 05:28:15 2013] [error]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Jul 22 05:28:15 2013] [error]   File "/home/diego/gestao/gestao.py", line 56, in autenticar
+[Mon Jul 22 05:28:15 2013] [error]     [request.args['senha']])
+[Mon Jul 22 05:28:15 2013] [error] OperationalError: no such column: dataAcesso
+[Mon Jul 22 05:28:57 2013] [error] ERROR:gestao:Exception on /autenticar [GET]
+[Mon Jul 22 05:28:57 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 05:28:57 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 05:28:57 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 05:28:57 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 05:28:57 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 05:28:57 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 05:28:57 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 05:28:57 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+[Mon Jul 22 05:28:57 2013] [error]     rv = self.dispatch_request()
+[Mon Jul 22 05:28:57 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1461, in dispatch_request
+[Mon Jul 22 05:28:57 2013] [error]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Jul 22 05:28:57 2013] [error]   File "/home/diego/gestao/gestao.py", line 56, in autenticar
+[Mon Jul 22 05:28:57 2013] [error]     [request.args['senha']])
+[Mon Jul 22 05:28:57 2013] [error] OperationalError: no such column: senha
+[Mon Jul 22 14:00:49 2013] [error] ERROR:gestao:Exception on /autenticar [GET]
+[Mon Jul 22 14:00:49 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 14:00:49 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 14:00:49 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 14:00:49 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 14:00:49 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 14:00:49 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 14:00:49 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 14:00:49 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+[Mon Jul 22 14:00:49 2013] [error]     rv = self.dispatch_request()
+[Mon Jul 22 14:00:49 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1461, in dispatch_request
+[Mon Jul 22 14:00:49 2013] [error]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Jul 22 14:00:49 2013] [error]   File "/home/diego/gestao/gestao.py", line 57, in autenticar
+[Mon Jul 22 14:00:49 2013] [error]     if g.db.fetchone():
+[Mon Jul 22 14:00:49 2013] [error] AttributeError: 'sqlite3.Connection' object has no attribute 'fetchone'
+[Mon Jul 22 14:11:35 2013] [error] diego
+[Mon Jul 22 14:11:35 2013] [error] qwe123*
+[Mon Jul 22 14:11:45 2013] [error] diegosdf
+[Mon Jul 22 14:11:45 2013] [error] qwe123*
+[Mon Jul 22 14:11:52 2013] [error] diego
+[Mon Jul 22 14:11:52 2013] [error] qwe123*
+[Mon Jul 22 14:11:54 2013] [error] diego
+[Mon Jul 22 14:11:54 2013] [error] qwe123*
+[Mon Jul 22 14:11:56 2013] [error] diego
+[Mon Jul 22 14:11:56 2013] [error] qwe123*
+[Mon Jul 22 14:12:04 2013] [error] diegoasdf
+[Mon Jul 22 14:12:04 2013] [error] qwe123*sadf
+[Mon Jul 22 14:15:07 2013] [error] asdf
+[Mon Jul 22 14:15:07 2013] [error] asdf
+[Mon Jul 22 14:44:30 2013] [error] ERROR:gestao:Exception on /usuarios [POST]
+[Mon Jul 22 14:44:30 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 14:44:30 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 14:44:30 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 14:44:30 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 14:44:30 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 14:44:30 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 14:44:30 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 14:44:30 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+[Mon Jul 22 14:44:30 2013] [error]     rv = self.dispatch_request()
+[Mon Jul 22 14:44:30 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1461, in dispatch_request
+[Mon Jul 22 14:44:30 2013] [error]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Jul 22 14:44:30 2013] [error]   File "/home/diego/gestao/gestao.py", line 53, in add_usuario
+[Mon Jul 22 14:44:30 2013] [error]     print "Erro inesperado:", sys.exc_info()[0]
+[Mon Jul 22 14:44:30 2013] [error] NameError: global name 'sys' is not defined
+[Mon Jul 22 14:44:59 2013] [error] Erro inesperado:
+[Mon Jul 22 14:45:35 2013] [error] Erro inesperado: <class 'werkzeug.exceptions.BadRequestKeyError'>
+[Mon Jul 22 14:56:35 2013] [error] Erro inesperado: (<class 'werkzeug.exceptions.BadRequestKeyError'>, <BadRequestKeyError '400: Bad Request'>, <traceback object at 0xb837be3c>)
+[Mon Jul 22 14:59:40 2013] [error] ERROR:gestao:Exception on /usuarios [POST]
+[Mon Jul 22 14:59:40 2013] [error] Traceback (most recent call last):
+[Mon Jul 22 14:59:40 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1817, in wsgi_app
+[Mon Jul 22 14:59:40 2013] [error]     response = self.full_dispatch_request()
+[Mon Jul 22 14:59:40 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+[Mon Jul 22 14:59:40 2013] [error]     rv = self.handle_user_exception(e)
+[Mon Jul 22 14:59:40 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1381, in handle_user_exception
+[Mon Jul 22 14:59:40 2013] [error]     reraise(exc_type, exc_value, tb)
+[Mon Jul 22 14:59:40 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+[Mon Jul 22 14:59:40 2013] [error]     rv = self.dispatch_request()
+[Mon Jul 22 14:59:40 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1461, in dispatch_request
+[Mon Jul 22 14:59:40 2013] [error]     return self.view_functions[rule.endpoint](**req.view_args)
+[Mon Jul 22 14:59:40 2013] [error]   File "/home/diego/gestao/gestao.py", line 48, in add_usuario
+[Mon Jul 22 14:59:40 2013] [error]     print request.forms
+[Mon Jul 22 14:59:40 2013] [error]   File "/usr/local/lib/python2.6/dist-packages/werkzeug/local.py", line 338, in __getattr__
+[Mon Jul 22 14:59:40 2013] [error]     return getattr(self._get_current_object(), name)
+[Mon Jul 22 14:59:40 2013] [error] AttributeError: 'Request' object has no attribute 'forms'
+[Mon Jul 22 15:01:17 2013] [error] ImmutableMultiDict([('dataAcesso', u'2013-07-20'), ('email', u'keterin@gmail.com'), ('senha', u'qwe123*'), ('usuario', u'keterin')])
+[Mon Jul 22 15:01:17 2013] [error] Erro inesperado: (<class 'werkzeug.exceptions.BadRequestKeyError'>, <BadRequestKeyError '400: Bad Request'>, <traceback object at 0xb94fdf2c>)
+[Mon Jul 22 15:10:44 2013] [error] ImmutableMultiDict([('dataAcesso', u'2013-07-20'), ('cnpj', u'923239409234'), ('senha', u'qwe123*'), ('usuario', u'keterin')])
+[Mon Jul 22 16:37:09 2013] [error] [client 177.19.98.11] File does not exist: /etc/apache2/htdocs/favicon.ico
+[Mon Jul 22 16:37:09 2013] [error] [client 177.19.98.11] File does not exist: /etc/apache2/htdocs/favicon.ico
+[Mon Jul 22 22:01:53 2013] [error] [client 177.19.98.11] File does not exist: /etc/apache2/htdocs/favicon.ico
+[Mon Jul 22 22:01:54 2013] [error] [client 177.19.98.11] File does not exist: /etc/apache2/htdocs/favicon.ico
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87] mod_wsgi (pid=11699): Target WSGI script '/home/diego/gestao/gestao.wsgi' cannot be loaded as Python module.
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87] mod_wsgi (pid=11699): Exception occurred processing WSGI script '/home/diego/gestao/gestao.wsgi'.
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87] Traceback (most recent call last):
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87]   File "/home/diego/gestao/gestao.wsgi", line 7, in <module>
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87]     from gestao import app as application
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87]   File "/home/diego/gestao/gestao.py", line 44, in <module>
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87]     @app.route('logacesso', methods=['POST'])
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1013, in decorator
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87]     self.add_url_rule(rule, endpoint, f, **options)
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 62, in wrapper_func
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87]     return f(self, *args, **kwargs)
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 976, in add_url_rule
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87]     rule = self.url_rule_class(rule, methods=methods, **options)
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87]   File "/usr/local/lib/python2.6/dist-packages/werkzeug/routing.py", line 541, in __init__
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87]     raise ValueError('urls must start with a leading slash')
+[Tue Jul 23 03:09:05 2013] [error] [client 177.134.150.87] ValueError: urls must start with a leading slash
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87] mod_wsgi (pid=11845): Target WSGI script '/home/diego/gestao/gestao.wsgi' cannot be loaded as Python module.
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87] mod_wsgi (pid=11845): Exception occurred processing WSGI script '/home/diego/gestao/gestao.wsgi'.
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87] Traceback (most recent call last):
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87]   File "/home/diego/gestao/gestao.wsgi", line 7, in <module>
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87]     from gestao import app as application
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87]   File "/home/diego/gestao/gestao.py", line 44, in <module>
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87]     @app.route('logacesso', methods=['POST'])
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 1013, in decorator
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87]     self.add_url_rule(rule, endpoint, f, **options)
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 62, in wrapper_func
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87]     return f(self, *args, **kwargs)
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87]   File "/usr/local/lib/python2.6/dist-packages/flask/app.py", line 976, in add_url_rule
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87]     rule = self.url_rule_class(rule, methods=methods, **options)
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87]   File "/usr/local/lib/python2.6/dist-packages/werkzeug/routing.py", line 541, in __init__
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87]     raise ValueError('urls must start with a leading slash')
+[Tue Jul 23 03:10:21 2013] [error] [client 177.134.150.87] ValueError: urls must start with a leading slash
+[Tue Jul 23 11:53:24 2013] [error] Erro inesperado (<class 'werkzeug.exceptions.BadRequestKeyError'>, <BadRequestKeyError '400: Bad Request'>, <traceback object at 0xb9a97f7c>)
